@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modalidades de Adoración PDF Download</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .hidden {
+            display: none;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Sorpresa!</h1>
+        <p id="message">Has sido engañado. No hay nada aquí.</p>
+        <button class="button" onclick="showSurprise()">Haz clic aquí</button>
+        <div id="surprise" class="hidden">
+            <p><strong>¡Te hemos atrapado!</strong></p>
+            <p>Este es solo un sitio de broma. ¡No hay nada aquí!</p>
+        </div>
+    </div>
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise').classList.remove('hidden');
+            document.getElementById('message').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
